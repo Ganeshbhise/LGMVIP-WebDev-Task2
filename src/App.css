@@ -1,38 +1,135 @@
-.App {
+* {
+  
+    margin: 0;
+    padding: 0;
+
+}
+
+.container{
+   
+   height: 110vh;
+   margin-top: -50px;
+   background-image: url("./components/bg.jpg");
+}
+
+h2{
+
   text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 20px;
+  font-size: 33px;
+  display: none;
+
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+header{
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(45deg,grey,wheat);
+  height: 100px;
+  line-height: 100px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-bottom: 50px;
+  
+}
+
+.nav{
+
+  width: 50%;
+  margin-left: 50px;
+  
+}
+
+.btn{
+
+  width: 20%;
+  margin-left: 550px;
+  padding: 12px;
+  border: 2px solid black;
+  border-radius: 12px;
+  background-color:seashell;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.btn:hover{
+
+  cursor: pointer;
+  background-color: grey;
   color: white;
+
+}
+ 
+.row {
+
+    margin: 50px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.column {
+
+  width: 25%;
+  padding: 8px 8px;
+  margin: 22px;
+  float: left;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card {
+
+    padding: 30px;
+    text-align: center;
+    background-color:seashell;
+
 }
+
+@media screen and (max-width: 600px) {
+
+    .column {
+
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+
+    }
+
+}
+
+.img {
+
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+   
+}
+
+.basicinfo {
+
+   font-size: 20px;
+   font-style: oblique;
+
+}
+
+.email {
+
+    color: grey;
+
+}
+
+.card:hover{
+
+    box-shadow:5px 5px 10px 10px rgb(65, 61, 61);
+    cursor: pointer;
+
+}
+
+.loader{
+
+  text-align: center;
+  margin-top: 40px;
+
+}
+
